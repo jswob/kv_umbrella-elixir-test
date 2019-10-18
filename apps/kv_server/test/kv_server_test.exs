@@ -2,7 +2,8 @@ defmodule KVServerTest do
   use ExUnit.Case
   # doctest KVServer
 
-  # @moduletag :capture_log
+  @moduletag :capture_log
+  @tag :distributed
 
   setup do
     Application.stop(:kv)
